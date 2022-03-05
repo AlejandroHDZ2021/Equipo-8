@@ -1,0 +1,255 @@
+
+body {
+    background-color: rgb(41, 65, 171);
+    
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+
+}
+
+.contenedor {
+    background-image: url('https://www-growth.scdn.co/static/home/bursts-tablet.svg') !important;
+    background: no-repeat;
+    background-size: 100%;
+    height: 1080px;
+}
+
+
+
+#header {
+    height: 80px;
+    width: 100%;
+    background: black;
+    border-bottom: 1px solid #ccc;        
+      
+}
+.center {
+    width: 75%;
+    margin: 0px auto;
+
+}
+.clearfix{
+    clear: both;
+    float: none;
+}
+#logo {
+    width: 35%;
+    font-size: 30px;
+    float: left;
+    margin-top: 35px;
+}
+#logo img {
+    display: block;
+    float: left;
+    height: 30px;
+    margin-top: 0px;
+    margin-right: 20px;
+}
+
+#brand {
+    display: block;
+    margin: -20px;
+    float: left;
+    color: #fff;
+}
+#menu{
+    float: right;
+    font-size: 18px;
+}
+#menu ul {
+    line-height: 50px;
+    float: right;
+}
+#menu ul li{
+    display: inline-block;
+    list-style: none;
+    height: 46px;
+    margin-left: 15px;
+    margin-right: 15px;
+   
+}
+#menu a{
+    text-decoration: none;
+    color: rgb(233, 222, 222);
+    transition: 300ms all;
+
+}
+#menu a:hover{
+    color: #33cf81;
+}
+
+
+
+.hero__main{
+    color: #fff;
+    display: grid;
+    gap: 1.5em;
+    text-align: center;
+    position: relative;
+
+}
+
+.hero__img{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.hero__title{
+    margin-top: 1.5em;
+    font-family: var(--heading-font);
+}
+
+.hero__paragraph{
+    line-height: 1.5;
+    /* margin: .5em 0; */
+}
+
+.hero__cta{
+    width: 250px;
+    padding: 1em 0;
+    border-radius: 2em;
+    color: rgb(99, 168, 85);
+    font-weight: bold;
+    place-self: center;
+    font-family: var(--heading-font);
+    text-decoration: none;
+}
+
+
+
+.footer{
+    background-color: black;
+    color: #fff;
+}
+
+.footer__items{
+    display: grid;
+    gap: 1em;   
+}
+
+.footer__logo{
+    width: 150px;
+    display: block;
+    margin-bottom: 2em;
+}
+
+.footer__contact{
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.footer__contact--second{
+    margin-bottom: 1em;
+}
+
+
+.footer__icon{
+    margin-top: 3px;
+}
+
+.footer__nav{
+    margin-top: 2.5em;
+    display: grid;
+    gap: .8em;
+}
+
+.footer__link{
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer__social{
+    margin-top: 2em;
+   margin: 0 auto;
+}
+
+.footer__media{
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border: 1px solid;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.footer__media--last{
+    margin-right: 0;
+}
+
+@media (min-width:740px){
+    .hero__title{
+        font-size: 2.5rem;
+    }
+
+    .hero__wave::before{       
+        background-image: url("../images/bg-curvy-desktop.svg");
+    }
+
+    .about{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .about__item{
+        width: 40%;
+    }
+
+    .productive{
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .productive__title{
+        font-size: 2rem;
+        margin-bottom: .6em;
+    }
+
+    .card{
+        flex-direction: row;
+    }
+
+    .join__container{
+        width: 70%;
+    }
+
+    .join__title{
+       font-size: 2rem;
+        margin-bottom: .7em;
+    }
+
+    .join__form{
+        grid-template-columns: 1fr max-content;
+    }
+
+    
+    .footer__items{
+        grid-template-columns: 2fr 1fr max-content max-content 1fr ;
+        gap: 2em;
+    }
+
+    
+    .footer__nav{
+        margin-top: 0;
+
+    }
+
+    .footer__media{
+        margin-bottom: 1em;
+    }
+  
+    .footer__social{
+        margin-top: 0em;
+        
+    }
+    
+    
+    .footer__media--last{
+        margin-right: 0;
+    }
+}
